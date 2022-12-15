@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "ngamplify75b69ee4": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
       }
     }
   }
