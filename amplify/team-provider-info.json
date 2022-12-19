@@ -15,7 +15,7 @@
       "function": {
         "ngAmplifyPostsApi": {
           "deploymentBucketName": "amplify-ngamplify-dev-83133-deployment",
-          "s3Key": "amplify-builds/ngAmplifyPostsApi-4951416836736e7a3066-build.zip"
+          "s3Key": "amplify-builds/ngAmplifyPostsApi-6c383169677939443837-build.zip"
         }
       },
       "api": {

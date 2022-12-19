@@ -57,11 +57,7 @@ app.get('/posts/*', function(req, res) {
 app.post('/posts', async function(req, res) {
   try {
     // Add your code here
-    const post = new Post({
-      title: "New Post 1",
-      body: "This is a post with body"
-    });
-
+    const post = new Post(req.body);
     await post.save()
     return res.json({success: 'post call succeed!', url: req.url, body: req.body, data: post})
   } catch (err) {

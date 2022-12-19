@@ -13,7 +13,7 @@ export class AppComponent {
   apiName = "ngAmplifyApi"
 
   constructor() {
-    from(API.post(this.apiName, '/posts', { body: { name: 'Ambroise BAZIE' } }))
+    from(API.get(this.apiName, '/posts', {}))
       .subscribe({next: console.log})
   }
 
