@@ -1,22 +1,25 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-ngamplify-dev-135915-authRole",
-      "UnauthRoleArn": "arn:aws:iam::743922655537:role/amplify-ngamplify-dev-135915-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::743922655537:role/amplify-ngamplify-dev-135915-authRole",
+      "AuthRoleName": "amplify-ngamplify-dev-83133-authRole",
+      "UnauthRoleArn": "arn:aws:iam::743922655537:role/amplify-ngamplify-dev-83133-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::743922655537:role/amplify-ngamplify-dev-83133-authRole",
       "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-ngamplify-dev-135915-deployment",
-      "UnauthRoleName": "amplify-ngamplify-dev-135915-unauthRole",
-      "StackName": "amplify-ngamplify-dev-135915",
-      "StackId": "arn:aws:cloudformation:eu-west-1:743922655537:stack/amplify-ngamplify-dev-135915/a7dc1570-7c80-11ed-aeb9-0ac435a2b451",
-      "AmplifyAppId": "d1rb0eh059vpqh"
+      "DeploymentBucketName": "amplify-ngamplify-dev-83133-deployment",
+      "UnauthRoleName": "amplify-ngamplify-dev-83133-unauthRole",
+      "StackName": "amplify-ngamplify-dev-83133",
+      "StackId": "arn:aws:cloudformation:eu-west-1:743922655537:stack/amplify-ngamplify-dev-83133/91337da0-7f77-11ed-a3c1-06bac91b7651",
+      "AmplifyAppId": "d3gfrylh8sl8gp"
     },
     "categories": {
-      "auth": {
-        "ngamplify75b69ee4": {}
+      "function": {
+        "ngAmplifyPostsApi": {
+          "deploymentBucketName": "amplify-ngamplify-dev-83133-deployment",
+          "s3Key": "amplify-builds/ngAmplifyPostsApi-4951416836736e7a3066-build.zip"
+        }
       },
-      "hosting": {
-        "S3AndCloudFront": {}
+      "api": {
+        "ngAmplifyApi": {}
       }
     }
   }
