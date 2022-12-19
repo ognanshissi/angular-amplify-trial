@@ -2,7 +2,7 @@
 
 const mongoose = require("mongoose");
 
-const uri = process.env.MONGODB_URI || 'mongodb+srv://boxtrackAdmin:0nWYnPafeiA4D6Ge@dev-cluster.cxrhz.mongodb.net/ng-amplify-post-db?retryWrites=true&w=majority';
+const uri = process.env.MONGODB_URI
 
 let connection;
 const connect = async () => {
