@@ -11,7 +11,8 @@
     "aws-serverless-express": "^3.3.5",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "mongoose": "latest"
+    "mongoose": "latest",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.92"

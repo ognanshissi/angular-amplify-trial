@@ -4,7 +4,7 @@ const awsServerlessExpressMiddleware = require('aws-serverless-express/middlewar
 const Post = require('./models/Post');
 const { default: mongoose } = require('mongoose');
 
-const uri = process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI || 'mongodb+srv://boxtrackAdmin:0nWYnPafeiA4D6Ge@dev-cluster.cxrhz.mongodb.net/ng-amplify-post-db?retryWrites=true&w=majority';
 
 // declare a new express app
 const app = express()
@@ -30,7 +30,7 @@ app.get('/posts', async function(req, res) {
     return res.json({success: 'get call succeed!', url: req.url, data: posts});
   } catch (err) {
     console.log(err);
-    return res.send({success: false, message: err.getMessage()})
+    return res.send({success: false})
   }
 });
 
@@ -50,6 +50,7 @@ app.post('/posts', async function(req, res) {
     await post.save()
     return res.json({success: 'post call succeed!', url: req.url, body: req.body, data: post})
   } catch (err) {
+    console.log(err);
     return res.send({ success: false})
   }
 });
