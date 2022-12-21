@@ -29,7 +29,6 @@ app.get('/posts', async function(req, res) {
     const posts = await Post.find({});
     return res.json({success: 'get call succeed!', url: req.url, data: posts});
   } catch (err) {
-    console.log(err);
     return res.send({success: false})
   }
 });

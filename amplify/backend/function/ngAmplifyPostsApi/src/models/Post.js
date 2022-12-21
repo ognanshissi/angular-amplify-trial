@@ -6,6 +6,8 @@ const PostSchema = new mongoose.Schema({
   title: { type: String, required: true },
   body: String,
   slug: {type: String, required: true}
+}, {
+  timestamps: true
 });
 
 PostSchema.virtual('caption').get(function () {
