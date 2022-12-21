@@ -15,11 +15,14 @@
       "function": {
         "ngAmplifyPostsApi": {
           "deploymentBucketName": "amplify-ngamplify-dev-83133-deployment",
-          "s3Key": "amplify-builds/ngAmplifyPostsApi-6c383169677939443837-build.zip"
+          "s3Key": "amplify-builds/ngAmplifyPostsApi-4a557a444b6941774b76-build.zip"
         }
       },
       "api": {
         "ngAmplifyApi": {}
+      },
+      "auth": {
+        "ngamplifybee5a5f0": {}
       }
     }
   }
